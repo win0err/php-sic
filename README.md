@@ -1,6 +1,6 @@
-# Simplified Instructional Computer Virtual Machine written in PHP
+# Simplified Instructional Computer VM written in PHP
 
-*Work in progress*
+**Work in progress**
 
 ## Installation
 
