@@ -1,0 +1,14 @@
+{
+    "name": "win0err/php-sic",
+    "description": "Leland Beck's Simplified Instructional Computer VM written in PHP",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sergei Kolesnikov",
+            "email": "win0err@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
