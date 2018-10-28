@@ -1,8 +1,6 @@
 parameters:
 	excludes_analyse:
 		- */vendor/*
-	autoload_files:
-		- ./vendor/autoload.php
 	reportUnmatchedIgnoredErrors: false
 includes:
 	- ./vendor/phpstan/phpstan/conf/config.level7.neon
