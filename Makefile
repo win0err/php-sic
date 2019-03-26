@@ -1,10 +1,10 @@
 #!/usr/bin/make -f
 SHELL = /bin/sh
 
-.PHONY : style analyze
+.PHONY : style analyze build lint
 .DEFAULT_GOAL := list
 
-all: style analyze
+all: lint analyze
 
 list:
 	@echo "Available targets: "
@@ -18,3 +18,6 @@ analyze:
 
 build:
 	docker build -t php-sic .
+
+lint:
+	php vendor/bin/php-cs-fixer fix --dry-run --verbose .
