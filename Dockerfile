@@ -1,5 +1,7 @@
 FROM php:cli-alpine
 
+RUN apk add make
+
 ENV COMPOSER_HOME /composer
 ENV COMPOSER_ALLOW_SUPERUSER 1
 ENV PATH /opt/php-sic/bin:/composer/vendor/bin:$PATH
