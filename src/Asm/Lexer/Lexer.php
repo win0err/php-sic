@@ -73,7 +73,7 @@ class Lexer extends AbstractLexer
         $line =
             0 === $rawToken['position']
                 ? 1
-                : \substr_count($this->getInputUntilPosition((int) $rawToken['position']), "\n", 0);
+                : substr_count($this->getInputUntilPosition((int) $rawToken['position']), "\n", 0);
 
         return new Token($rawToken['type'], $rawToken['value'], ['offset' => $rawToken['position'], 'line' => $line]);
     }
