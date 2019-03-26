@@ -15,3 +15,6 @@ style:
 
 analyze:
 	php vendor/bin/phpstan analyze .
+
+build:
+	docker build -t php-sic .

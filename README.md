@@ -6,8 +6,24 @@
 
 ### Docker-way
 
+**Build a container**
 ```bash
 docker build -t php-sic .
+# Or using make:
+make build
+```
+
+**Run**
+```bash
+docker run --rm -v $PWD:/app php-sic [command and some arguments for it]
+```
+
+Also you may create an alias for simple running PHP SIC:
+```bash
+# Just add the following line to your ~/.zshrc, ~/.bashrc or ~/.profile
+alias php-sic='docker run --rm -v $PWD:/app php-sic'
+# After that, you will be able to run commands easier:
+php-sic [command and some arguments for it]
 ```
 
 ### Classic way
